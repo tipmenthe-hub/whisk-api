@@ -1,6 +1,6 @@
 services:
   whisk:
-    image: ghcr.io/rohitaryal/whisk-api:latest
+    build: .
     ports:
       - "8001:8000"
     environment:
