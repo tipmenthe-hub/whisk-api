@@ -1,0 +1,9 @@
+services:
+  whisk:
+    image: ghcr.io/rohitaryal/whisk-api:latest
+    ports:
+      - "8001:8000"
+    environment:
+      - COOKIE=${COOKIE}
+      - PORT=8000
+    restart: unless-stopped
